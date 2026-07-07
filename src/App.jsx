@@ -194,15 +194,17 @@ function App() {
 
             <form
               className="contact-form"
-              name="clecd-contact"
+              name="contact"
               method="POST"
               data-netlify="true"
               netlify-honeypot="bot-field"
+              action="/thank-you.html"
             >
-              <input type="hidden" name="form-name" value="clecd-contact" />
-              <p className="hidden">
+              <input type="hidden" name="form-name" value="contact" />
+              <p hidden>
                 <label>
-                  Do not fill this out: <input name="bot-field" />
+                  Don't fill this out:
+                  <input name="bot-field" />
                 </label>
               </p>
               <label>

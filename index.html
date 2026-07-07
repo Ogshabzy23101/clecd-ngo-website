@@ -11,7 +11,15 @@
   </head>
   <body>
     <!-- Netlify Forms detection fallback. Keep fields in sync with src/App.jsx. -->
-    <form name="clecd-contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
+    <form
+      name="contact"
+      method="POST"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      action="/thank-you.html"
+      hidden
+    >
+      <input type="hidden" name="form-name" value="contact" />
       <input type="text" name="name" />
       <input type="email" name="email" />
       <textarea name="message"></textarea>
