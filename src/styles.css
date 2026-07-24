@@ -49,14 +49,21 @@ a {
 
 .brand-mark {
   align-items: center;
-  background: #21785d;
-  border-radius: 8px;
-  color: #ffffff;
+  background: #ffffff;
+  border: 1px solid #eadfce;
+  border-radius: 50%;
   display: inline-flex;
-  font-weight: 800;
-  height: 2.75rem;
+  height: 3rem;
   justify-content: center;
-  width: 2.75rem;
+  overflow: hidden;
+  width: 3rem;
+}
+
+.brand-mark img {
+  display: block;
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
 }
 
 .brand strong,
@@ -85,8 +92,8 @@ a {
 .hero {
   align-items: center;
   background:
-    linear-gradient(90deg, rgba(18, 63, 49, 0.92), rgba(43, 104, 79, 0.7)),
-    linear-gradient(135deg, #1d6f55, #d4934c);
+    linear-gradient(90deg, rgba(18, 63, 49, 0.94), rgba(43, 104, 79, 0.72)),
+    url("/images/clcd-anti-fgm-outreach-1.png") center / cover;
   color: #ffffff;
   display: grid;
   gap: 2rem;
@@ -250,17 +257,19 @@ h3 {
 }
 
 .gallery-item {
-  align-items: center;
   aspect-ratio: 4 / 3;
-  background:
-    linear-gradient(135deg, rgba(33, 120, 93, 0.2), rgba(212, 147, 76, 0.2)),
-    #f3eadc;
-  border: 1px dashed #cfbfa8;
+  background: #f3eadc;
+  border: 1px solid #eadfce;
   border-radius: 8px;
-  color: #647064;
-  display: flex;
-  font-weight: 800;
-  justify-content: center;
+  margin: 0;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
 }
 
 .contact-form {

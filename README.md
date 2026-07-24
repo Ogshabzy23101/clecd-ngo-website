@@ -52,4 +52,4 @@ The included `netlify.toml` already contains the build and publish settings.
 
 ## Content Notes
 
-Several sections include placeholder content for programmes, gallery images, donations, and the future domain name. i put some placeholder which can be replace with actual value in `src/App.jsx` and all style can be modify in `src/styles.css` when final content and images are available.
+Several sections include placeholder content for programmes, gallery images, donations, and the future domain name. i put some placeholder which can be replace with actual value in `src/App.jsx` and all style can be modifyy in `src/styles.css` when final content and images are available.

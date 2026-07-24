@@ -22,12 +22,41 @@ const programmes = [
   },
 ];
 
+const galleryImages = [
+  {
+    src: '/images/clcd-anti-fgm-outreach-1.png',
+    alt: 'CLECD anti-FGM awareness outreach with school children holding advocacy posters.',
+  },
+  {
+    src: '/images/clcd-anti-fgm-outreach-2.png',
+    alt: 'CLECD speaker addressing students during an anti-FGM awareness programme.',
+  },
+  {
+    src: '/images/clcd-anti-fgm-outreach-3.png',
+    alt: 'Students holding anti-FGM advocacy signs during a CLECD community outreach.',
+  },
+  {
+    src: '/images/clcd-anti-fgm-outreach-4.png',
+    alt: 'Children and community members displaying end FGM campaign placards.',
+  },
+  {
+    src: '/images/clcd-anti-fgm-outreach-5.png',
+    alt: 'Group of students holding anti-FGM campaign materials at a CLECD outreach.',
+  },
+  {
+    src: '/images/clcd-anti-fgm-outreach-6.png',
+    alt: 'CLECD facilitator speaking with students holding FGM awareness posters.',
+  },
+];
+
 function App() {
   return (
     <>
       <header className="site-header">
         <a className="brand" href="#home" aria-label="CLECD home">
-          <span className="brand-mark">CL</span>
+          <span className="brand-mark">
+            <img src="/images/clecd-logo.png" alt="CLECD logo" />
+          </span>
           <span>
             <strong>CLECD</strong>
             <small>Nigeria</small>
@@ -146,16 +175,15 @@ function App() {
             <p className="eyebrow">Gallery</p>
             <h2>Snapshots from the field.</h2>
             <p>
-              {/* Replace these placeholders with real CLECD event and programme photographs. */}
-              Image placeholders are included for future outreach, programme,
-              training, or community visit photos.
+              CLECD community outreach images from an anti-FGM awareness
+              programme with students and community members.
             </p>
           </div>
           <div className="gallery-grid">
-            {[1, 2, 3, 4, 5, 6].map((item) => (
-              <div className="gallery-item" key={item}>
-                <span>Photo {item}</span>
-              </div>
+            {galleryImages.map((image) => (
+              <figure className="gallery-item" key={image.src}>
+                <img src={image.src} alt={image.alt} loading="lazy" />
+              </figure>
             ))}
           </div>
         </section>

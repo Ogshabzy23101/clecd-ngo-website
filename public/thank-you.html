@@ -52,14 +52,20 @@
 
       .brand-mark {
         align-items: center;
-        background: #d4934c;
-        border-radius: 8px;
-        color: #17271f;
+        background: #ffffff;
+        border-radius: 50%;
         display: inline-flex;
-        font-weight: 800;
-        height: 2.75rem;
+        height: 3.25rem;
         justify-content: center;
-        width: 2.75rem;
+        overflow: hidden;
+        width: 3.25rem;
+      }
+
+      .brand-mark img {
+        display: block;
+        height: 100%;
+        object-fit: contain;
+        width: 100%;
       }
 
       h1 {
@@ -94,7 +100,9 @@
     <main>
       <section class="message" aria-labelledby="thank-you-title">
         <a class="brand" href="/">
-          <span class="brand-mark">CL</span>
+          <span class="brand-mark">
+            <img src="/images/clecd-logo.png" alt="CLECD logo" />
+          </span>
           <strong>CLECD</strong>
         </a>
         <h1 id="thank-you-title">Thank you.</h1>
