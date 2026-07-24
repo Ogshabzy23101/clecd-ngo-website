@@ -9,16 +9,16 @@ const navItems = [
 
 const programmes = [
   {
-    title: 'Community Care',
-    text: 'Placeholder for CLECD community support activities, outreach work, and care initiatives.',
+    title: 'Anti-FGM Awareness and Prevention',
+    text: 'CLECD educates students and community members on the health risks, human-rights concerns, and long-term harm linked to female genital mutilation.',
   },
   {
-    title: 'Vulnerable Persons Support',
-    text: 'Placeholder for programme details focused on marginalised and vulnerable people.',
+    title: 'School and Youth Outreach',
+    text: 'Through school visits, public talks, and child-friendly campaign materials, CLECD helps young people understand their rights and speak up for safer futures.',
   },
   {
-    title: 'Life Enhancement Initiatives',
-    text: 'Placeholder for skills, wellbeing, education, or livelihood development activities.',
+    title: 'Community Advocacy and Protection',
+    text: 'CLECD works with local stakeholders to encourage protective laws, community dialogue, and practical support for girls and vulnerable children.',
   },
 ];
 
@@ -138,12 +138,11 @@ function App() {
         <section className="section" id="programmes">
           <div className="section-heading">
             <p className="eyebrow">Our Programmes</p>
-            <h2>Focused programmes with room to grow.</h2>
+            <h2>Protecting dignity, health, and opportunity.</h2>
             <p>
-              {/* Replace this placeholder once CLECD's confirmed programme descriptions are available. */}
-              Programme details below are placeholders and should be updated
-              with real CLECD activities, impact numbers, and beneficiary
-              stories.
+              Based on CLECD's outreach work, the organisation supports
+              awareness, prevention, and advocacy programmes that protect
+              marginalised and vulnerable people, especially girls and children.
             </p>
           </div>
           <div className="programme-grid">
